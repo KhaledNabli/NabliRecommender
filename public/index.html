@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=egde">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Online Recommendation Movies Self Learning">
+        <meta name="author" content="Khaled Nabli">
+        <link rel="shortcut icon" href="">
+        <title>NECOMMENDATION</title>
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="css/justified-nav.css" rel="stylesheet">
+        <!--[if lt IE 10]>
+        <script src="js/libs/modernizr-2.6.2.min.js"></script>
+        <script src="js/libs/html5shiv.js"></script>
+        <script src="js/libs/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+	<script src="js/libs/jquery-1.10.2.js"></script>
+	<script src="js/libs/handlebars-1.1.2.js"></script>
+	<script src="js/libs/ember-1.2.0.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/libs/holder.js"></script>
+	<script language="javascript">
+	var _0x883d=["\x63\x72\x65\x61\x74\x65","\x41\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E","\x6D\x61\x70","\x52\x6F\x75\x74\x65\x72","\x49\x6E\x64\x65\x78\x52\x6F\x75\x74\x65","\x68\x74\x74\x70\x3A\x2F\x2F\x61\x70\x69\x2E\x6B\x6C\x61\x75\x64\x6E\x61\x62\x6C\x69\x2E\x63\x6F\x6D\x2F\x72\x65\x63\x6F\x2F","\x47\x45\x54","\x6A\x73\x6F\x6E","\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64","\x61\x6A\x61\x78","\x24","\x53\x65\x74\x75\x70\x20\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72\x20\x66\x6F\x72\x20\x49\x6E\x64\x65\x78\x52\x6F\x75\x74\x65","\x6C\x6F\x67","\x6D\x6F\x76\x69\x65\x73","\x73\x65\x74","\x63\x6C\x75\x73\x74\x65\x72\x73","\x63\x72\x74\x52\x61\x74\x69\x6E\x67","\x63\x72\x74\x51\x75\x6F\x74\x65","\x65\x78\x74\x65\x6E\x64","\x52\x6F\x75\x74\x65","\x49\x6E\x64\x65\x78\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72","\x72\x61\x74\x65","\x69\x64","\x35","\x33\x30","\x6D\x6F\x64\x65\x6C","\x4C\x6F\x61\x64\x69\x6E\x67\x20\x6E\x65\x77\x20\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x61\x74\x69\x6F\x6E\x73\x20\x20\x2D\x2D\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x21","\x4C\x6F\x61\x64\x69\x6E\x67\x20\x6E\x65\x77\x20\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x61\x74\x69\x6F\x6E\x73\x20\x2D\x2D\x20\x77\x61\x69\x74\x69\x6E\x67\x20\x2E\x2E\x2E","\x72\x65\x73\x65\x74","\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72","\x4D\x6F\x76\x69\x65\x45\x6E\x74\x72\x79\x43\x6F\x6D\x70\x6F\x6E\x65\x6E\x74","\x6D\x6F\x76\x69\x65","\x67\x65\x74","\x61\x63\x74\x69\x6F\x6E","\x73\x65\x6E\x64\x41\x63\x74\x69\x6F\x6E","\x72\x75\x6E","\x6E\x65\x78\x74","\x43\x6F\x6D\x70\x6F\x6E\x65\x6E\x74","\x78\x68\x72\x46\x69\x65\x6C\x64\x73","\x61\x6A\x61\x78\x53\x65\x6E\x64","\x6C\x65\x6E\x67\x74\x68","\x23\x6C\x6F\x61\x64\x69\x6E\x67\x62\x61\x72","\x3C\x64\x69\x76\x20\x69\x64\x3D\x27\x6C\x6F\x61\x64\x69\x6E\x67\x62\x61\x72\x27\x3E\x3C\x2F\x64\x69\x76\x3E","\x61\x70\x70\x65\x6E\x64","\x62\x6F\x64\x79","\x3C\x64\x74\x2F\x3E\x3C\x64\x64\x2F\x3E","\x77\x61\x69\x74\x69\x6E\x67","\x61\x64\x64\x43\x6C\x61\x73\x73","","\x72\x61\x6E\x64\x6F\x6D","\x25","\x77\x69\x64\x74\x68","\x72\x69\x67\x68\x74","\x61\x6E\x69\x6D\x61\x74\x65","\x6C\x65\x66\x74","\x64\x6F\x77\x6E","\x75\x70","\x72\x65\x6D\x6F\x76\x65","\x66\x61\x64\x65\x4F\x75\x74","\x64\x65\x6C\x61\x79","\x31\x30\x31\x25","\x30","\x63\x73\x73","\x68\x65\x69\x67\x68\x74","\x74\x6F\x70"];RecoApp=Ember[_0x883d[1]][_0x883d[0]]();RecoApp[_0x883d[3]][_0x883d[2]](function (){} );RecoApp[_0x883d[4]]=Ember[_0x883d[19]][_0x883d[18]]({model:function (){return Ember[_0x883d[10]][_0x883d[9]]({url:_0x883d[5],type:_0x883d[6],dataType:_0x883d[7],data:{action:_0x883d[8]},beforeSend:startLoadingBar(),complete:endLoadingBar()});} ,setupController:function (_0xfbd0x1,_0xfbd0x2){console[_0x883d[12]](_0x883d[11]);_0xfbd0x1[_0x883d[14]](_0x883d[13],_0xfbd0x2.Recommendations);_0xfbd0x1[_0x883d[14]](_0x883d[15],_0xfbd0x2.Clusters);_0xfbd0x1[_0x883d[14]](_0x883d[16],_0xfbd0x2.RateChart);_0xfbd0x1[_0x883d[14]](_0x883d[17],_0xfbd0x2.QuoteChart);} });RecoApp[_0x883d[20]]=Ember[_0x883d[29]][_0x883d[18]]({actions:{rateMovie:function (_0xfbd0x3,_0xfbd0x4){Ember[_0x883d[10]][_0x883d[9]]({url:_0x883d[5],type:_0x883d[6],dataType:_0x883d[7],data:{action:_0x883d[21],movie:_0xfbd0x3[_0x883d[22]],rate:_0xfbd0x4,clustersize:_0x883d[23],moviesize:_0x883d[24]},context:this,success:function (_0xfbd0x5){this[_0x883d[14]](_0x883d[25],_0xfbd0x5);this[_0x883d[14]](_0x883d[13],_0xfbd0x5.Recommendations);this[_0x883d[14]](_0x883d[15],_0xfbd0x5.Clusters);this[_0x883d[14]](_0x883d[16],_0xfbd0x5.RateChart);this[_0x883d[14]](_0x883d[17],_0xfbd0x5.QuoteChart);console[_0x883d[12]](_0x883d[26]);} ,beforeSend:startLoadingBar(),complete:endLoadingBar()});console[_0x883d[12]](_0x883d[27]);} ,reset:function (){Ember[_0x883d[10]][_0x883d[9]]({url:_0x883d[5],type:_0x883d[6],dataType:_0x883d[7],data:{action:_0x883d[28]}});Ember[_0x883d[10]][_0x883d[9]]({url:_0x883d[5],type:_0x883d[6],dataType:_0x883d[7],data:{action:_0x883d[8]},context:this,success:function (_0xfbd0x5){this[_0x883d[14]](_0x883d[25],_0xfbd0x5);this[_0x883d[14]](_0x883d[13],_0xfbd0x5.Recommendations);this[_0x883d[14]](_0x883d[15],_0xfbd0x5.Clusters);this[_0x883d[14]](_0x883d[16],_0xfbd0x5.RateChart);this[_0x883d[14]](_0x883d[17],_0xfbd0x5.QuoteChart);console[_0x883d[12]](_0x883d[26]);} ,beforeSend:startLoadingBar(),complete:endLoadingBar()});console[_0x883d[12]](_0x883d[27]);} }});RecoApp[_0x883d[30]]=Ember[_0x883d[37]][_0x883d[18]]({actions:{rate:function (_0xfbd0x4){var _0xfbd0x3=this[_0x883d[32]](_0x883d[31]);this[_0x883d[34]](_0x883d[33],_0xfbd0x3,_0xfbd0x4);} },didInsertElement:function (){Ember[_0x883d[35]][_0x883d[36]](function (){Holder[_0x883d[35]]();} );} });Ember.$(document)[_0x883d[39]](function (_0xfbd0x6,_0xfbd0x7,_0xfbd0x8){_0xfbd0x8[_0x883d[38]]={withCredentials:true};} );function startLoadingBar(_0xfbd0xa){if($(_0x883d[41])[_0x883d[40]]===0){$(_0x883d[44])[_0x883d[43]](_0x883d[42]);} ;$(_0x883d[41])[_0x883d[47]](_0x883d[46])[_0x883d[43]]($(_0x883d[45]));switch(_0xfbd0xa){default:;case _0x883d[48]:;case _0x883d[52]:$(_0x883d[41])[_0x883d[51]]((50+Math[_0x883d[49]]()*30)+_0x883d[50]);break ;;case _0x883d[54]:$(_0x883d[41])[_0x883d[47]](_0x883d[54])[_0x883d[53]]({right:0,left:100-(50+Math[_0x883d[49]]()*30)+_0x883d[50]},200);break ;;case _0x883d[55]:$(_0x883d[41])[_0x883d[47]](_0x883d[55])[_0x883d[53]]({left:0,height:(50+Math[_0x883d[49]]()*30)+_0x883d[50]},200);break ;;case _0x883d[56]:$(_0x883d[41])[_0x883d[47]](_0x883d[56])[_0x883d[53]]({left:0,top:100-(50+Math[_0x883d[49]]()*30)+_0x883d[50]},200);break ;;} ;} ;function endLoadingBar(_0xfbd0xa){switch(_0xfbd0xa){default:;case _0x883d[48]:;case _0x883d[52]:$(_0x883d[41])[_0x883d[51]](_0x883d[60])[_0x883d[59]](200)[_0x883d[58]](400,function (){$(this)[_0x883d[57]]();} );break ;;case _0x883d[54]:$(_0x883d[41])[_0x883d[62]](_0x883d[54],_0x883d[61])[_0x883d[59]](200)[_0x883d[58]](400,function (){$(this)[_0x883d[57]]();} );break ;;case _0x883d[55]:$(_0x883d[41])[_0x883d[63]](_0x883d[60])[_0x883d[59]](200)[_0x883d[58]](400,function (){$(this)[_0x883d[57]]();} );break ;;case _0x883d[56]:$(_0x883d[41])[_0x883d[62]](_0x883d[64],_0x883d[61])[_0x883d[59]](200)[_0x883d[58]](400,function (){$(this)[_0x883d[57]]();} );break ;;} ;} ;
+	</script>
+	 <script type="text/x-handlebars">
+            <div class="container">
+            <!-- Container -->
+            <div class="container">
+				{{outlet}}
+            </div>
+            <!-- Footer -->
+            <footer>
+            <div class="footer">
+				<p>&copy Khaled Nabli</p>
+            </div>
+            </footer>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars" id="index">
+            <div class="row">
+			 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<img {{ bindAttr src="crtQuote" }} {{action "reset"}} alt="Logo" class="chartPicture"/>
+			 </div>
+			 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<img {{ bindAttr src="crtRating" }} {{action "reset"}} alt="Logo" class="chartPicture"/>
+			 </div>
+			</div>
+            <div class="row">
+            {{#each item in movies}}
+            {{movie-entry movie=item action="rateMovie"}}
+            {{/each}}
+            </div>
+        </script>
+
+        <script type="text/x-handlebars" id="components/movie-entry">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="shadowBox">
+
+                {{#if movie.picture.length}}
+                <img {{ bindAttr src="movie.picture" }} alt="Movie Poster" class="img-rounded movieTitlePic" />
+                {{else}}
+                <img data-src="holder.js/80x100/text:No Pic" {{ bindAttr alt="movie.title"}} class="img-rounded movieTitlePic"  />
+                {{/if}}
+                <h4>{{movie.index}} {{movie.title}}</h4>
+                <p>{{#each category in movie.categories}} <span class="label label-default">{{category}}</span> {{/each}}</p>
+                <form>
+                <div class="btn-group">
+                <button type="button" class="btn btn-default" {{action "rate" 1}}>1</button> 
+                <button type="button" class="btn btn-default" {{action "rate" 2}}>2</button> 
+                <button type="button" class="btn btn-default" {{action "rate" 3}}>3</button> 
+                <button type="button" class="btn btn-default" {{action "rate" 4}}>4</button> 
+                <button type="button" class="btn btn-default" {{action "rate" 5}}>5</button>
+                </div>
+                </form>
+                </div>
+                </div>
+        </script>
+    </body>
+</html>

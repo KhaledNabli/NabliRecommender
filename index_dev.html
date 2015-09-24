@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=egde">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Online Recommendation Movies Self Learning">
+        <meta name="author" content="Khaled Nabli">
+        <link rel="shortcut icon" href="">
+        <title>NECOMMENDATION</title>
+        <link href="css/main.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="css/justified-nav.css" rel="stylesheet">
+        
+        <!--[if lt IE 10]>
+                <script src="js/libs/modernizr-2.6.2.min.js"></script>
+                <script src="js/libs/html5shiv.js"></script>
+                <script src="js/libs/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <script src="js/libs/jquery-1.10.2.js"></script>
+        <script src="js/libs/handlebars-1.1.2.js"></script>
+        <script src="js/libs/ember-1.2.0.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/holder.js"></script>
+        <script src="js/app.js"></script>
+        <script type="text/x-handlebars">
+            <div class="container">
+            <!-- Container -->
+            <div class="container">
+				{{outlet}}
+            </div>
+            <!-- Footer -->
+            <footer>
+            <div class="footer">
+				<p>&copy Khaled Nabli</p>
+            </div>
+            </footer>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars" id="index">
+            <div class="row">
+			 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<img {{ bindAttr src="crtQuote" }} {{action "reset"}} alt="Logo" class="chartPicture"/>
+			 </div>
+			 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<img {{ bindAttr src="crtRating" }} {{action "reset"}} alt="Logo" class="chartPicture"/>
+			 </div>
+			</div>
+            <div class="row">
+            {{#each item in movies}}
+            {{movie-entry movie=item action="rateMovie"}}
+            {{/each}}
+            </div>
+        </script>
+
+        <script type="text/x-handlebars" id="components/movie-entry">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="shadowBox">
+
+                {{#if movie.picture.length}}
+                <img {{ bindAttr src="movie.picture" }} alt="Movie Poster" class="img-rounded movieTitlePic" />
+                {{else}}
+                <img data-src="holder.js/80x100/text:No Pic" {{ bindAttr alt="movie.title"}} class="img-rounded movieTitlePic"  />
+                {{/if}}
+                <h4>{{movie.index}} {{movie.title}}</h4>
+                <p>{{#each category in movie.categories}} <span class="label label-default">{{category}}</span> {{/each}}</p>
+                <form>
+                <div class="btn-group">
+                <button type="button" class="btn btn-default" {{action "rate" 1}}>1</button> 
+                <button type="button" class="btn btn-default" {{action "rate" 2}}>2</button> 
+                <button type="button" class="btn btn-default" {{action "rate" 3}}>3</button> 
+                <button type="button" class="btn btn-default" {{action "rate" 4}}>4</button> 
+                <button type="button" class="btn btn-default" {{action "rate" 5}}>5</button>
+                </div>
+                </form>
+                </div>
+                </div>
+        </script>
+    </body>
+</html>

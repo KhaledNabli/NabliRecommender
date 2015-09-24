@@ -1,0 +1,553 @@
+<html class="no-js"><!--<![endif]--><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=egde">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Online Recommendation Movies Self Learning">
+        <meta name="author" content="Khaled Nabli">
+        <link rel="shortcut icon" href="">
+        <title>NECOMMENDATION</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/justified-nav.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <!--[if lt IE 10]>
+                <script src="js/libs/modernizr-2.6.2.min.js"></script>
+                <script src="js/libs/html5shiv.js"></script>
+                <script src="js/libs/respond.min.js"></script>
+        <![endif]-->
+        <style id="holderjs-style" type="text/css"></style></head>
+    <body style="" class="ember-application" data-ember-extension="1">
+        <script src="js/libs/jquery-1.10.2.js"></script>
+        <script src="js/libs/handlebars-1.1.2.js"></script>
+        <script src="js/libs/ember-1.2.0.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/holder.js"></script>
+        <script>
+            var _0xeccb = ["\x68\x74\x74\x70\x3A\x2F\x2F\x61\x70\x69\x2E\x6B\x6C\x61\x75\x64\x6E\x61\x62\x6C\x69\x2E\x63\x6F\x6D\x2F\x72\x65\x63\x6F\x2F", "\x63\x6C\x75\x73\x74\x65\x72\x73\x69\x7A\x65\x3D", "\x26\x6D\x6F\x76\x69\x65\x73\x69\x7A\x65\x3D", "\x63\x72\x65\x61\x74\x65", "\x41\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E", "\x6D\x61\x70", "\x52\x6F\x75\x74\x65\x72", "\x49\x6E\x64\x65\x78\x52\x6F\x75\x74\x65", "\x52\x65\x61\x64\x69\x6E\x67\x20\x6D\x6F\x64\x65\x6C\x20\x66\x6F\x72\x20\x49\x6E\x64\x65\x78\x52\x6F\x75\x74\x65", "\x6C\x6F\x67", "\x3F", "\x67\x65\x74\x4A\x53\x4F\x4E", "\x24", "\x53\x65\x74\x75\x70\x20\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72\x20\x66\x6F\x72\x20\x49\x6E\x64\x65\x78\x52\x6F\x75\x74\x65", "\x6D\x6F\x76\x69\x65\x73", "\x73\x65\x74", "\x63\x6C\x75\x73\x74\x65\x72\x73", "\x63\x72\x74\x52\x61\x74\x69\x6E\x67", "\x63\x72\x74\x51\x75\x6F\x74\x65", "\x65\x78\x74\x65\x6E\x64", "\x52\x6F\x75\x74\x65", "\x49\x6E\x64\x65\x78\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72", "\x52\x61\x74\x69\x6E\x67\x20", "\x74\x69\x74\x6C\x65", "\x20\x77\x69\x74\x68\x20", "\x20\x73\x74\x61\x72\x73", "\x3F\x61\x63\x74\x69\x6F\x6E\x3D\x72\x61\x74\x65\x26\x6D\x6F\x76\x69\x65\x3D", "\x69\x64", "\x26\x72\x61\x74\x65\x3D", "\x26", "\x6A\x73\x6F\x6E", "\x6D\x6F\x64\x65\x6C", "\x4C\x6F\x61\x64\x69\x6E\x67\x20\x6E\x65\x77\x20\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x61\x74\x69\x6F\x6E\x73\x20\x20\x2D\x2D\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x21", "\x61\x6A\x61\x78", "\x4C\x6F\x61\x64\x69\x6E\x67\x20\x6E\x65\x77\x20\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x61\x74\x69\x6F\x6E\x73\x20\x2D\x2D\x20\x77\x61\x69\x74\x69\x6E\x67\x20\x2E\x2E\x2E", "\x52\x65\x73\x65\x74\x20\x72\x65\x71\x75\x65\x73\x74\x65\x64\x20\x2D\x2D\x20\x77\x61\x69\x74\x69\x6E\x67\x20\x2E\x2E\x2E", "\x3F\x61\x63\x74\x69\x6F\x6E\x3D\x72\x65\x73\x65\x74", "\x52\x65\x73\x65\x74\x20\x72\x65\x71\x75\x65\x73\x74\x65\x64\x20\x2D\x2D\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x21", "\x43\x6F\x6E\x74\x72\x6F\x6C\x6C\x65\x72", "\x4D\x6F\x76\x69\x65\x45\x6E\x74\x72\x79\x43\x6F\x6D\x70\x6F\x6E\x65\x6E\x74", "\x6D\x6F\x76\x69\x65", "\x67\x65\x74", "\x61\x63\x74\x69\x6F\x6E", "\x73\x65\x6E\x64\x41\x63\x74\x69\x6F\x6E", "\x72\x75\x6E", "\x6E\x65\x78\x74", "\x43\x6F\x6D\x70\x6F\x6E\x65\x6E\x74", "\x78\x68\x72\x46\x69\x65\x6C\x64\x73", "\x61\x6A\x61\x78\x53\x65\x6E\x64"];
+            RecoApiBaseUrl = _0xeccb[0];
+            RecoApiNCluster = 5;
+            RecoApiNMovies = 20;
+            RecoApiConfigUrl = _0xeccb[1] + RecoApiNCluster + _0xeccb[2] + RecoApiNMovies;
+            RecoApp = Ember[_0xeccb[4]][_0xeccb[3]]();
+            RecoApp[_0xeccb[6]][_0xeccb[5]](function() {
+            });
+            RecoApp[_0xeccb[7]] = Ember[_0xeccb[20]][_0xeccb[19]]({model: function() {
+                    console[_0xeccb[9]](_0xeccb[8]);
+                    return Ember[_0xeccb[12]][_0xeccb[11]](RecoApiBaseUrl + _0xeccb[10] + RecoApiConfigUrl);
+                }, setupController: function(_0xe48ex1, _0xe48ex2) {
+                    console[_0xeccb[9]](_0xeccb[13]);
+                    _0xe48ex1[_0xeccb[15]](_0xeccb[14], _0xe48ex2.Recommendations);
+                    _0xe48ex1[_0xeccb[15]](_0xeccb[16], _0xe48ex2.Clusters);
+                    _0xe48ex1[_0xeccb[15]](_0xeccb[17], _0xe48ex2.RateChart);
+                    _0xe48ex1[_0xeccb[15]](_0xeccb[18], _0xe48ex2.QuoteChart);
+                }});
+            RecoApp[_0xeccb[21]] = Ember[_0xeccb[38]][_0xeccb[19]]({actions: {rateMovie: function(_0xe48ex3, _0xe48ex4) {
+                        console[_0xeccb[9]](_0xeccb[22] + _0xe48ex3[_0xeccb[23]] + _0xeccb[24] + _0xe48ex4 + _0xeccb[25]);
+                        var _0xe48ex5 = RecoApiBaseUrl + _0xeccb[26] + _0xe48ex3[_0xeccb[27]] + _0xeccb[28] + _0xe48ex4 + _0xeccb[29] + RecoApiConfigUrl;
+                        Ember[_0xeccb[12]][_0xeccb[33]]({url: _0xe48ex5, dataType: _0xeccb[30], context: this, success: function(_0xe48ex6) {
+                                this[_0xeccb[15]](_0xeccb[31], _0xe48ex6);
+                                this[_0xeccb[15]](_0xeccb[14], _0xe48ex6.Recommendations);
+                                this[_0xeccb[15]](_0xeccb[16], _0xe48ex6.Clusters);
+                                this[_0xeccb[15]](_0xeccb[17], _0xe48ex6.RateChart);
+                                this[_0xeccb[15]](_0xeccb[18], _0xe48ex6.QuoteChart);
+                                console[_0xeccb[9]](_0xeccb[32]);
+                            }});
+                        console[_0xeccb[9]](_0xeccb[34]);
+                    }, reset: function() {
+                        console[_0xeccb[9]](_0xeccb[35]);
+                        Ember[_0xeccb[12]][_0xeccb[33]]({url: RecoApiBaseUrl + _0xeccb[36], dataType: _0xeccb[30], success: function() {
+                                console[_0xeccb[9]](_0xeccb[37]);
+                            }});
+                        Ember[_0xeccb[12]][_0xeccb[33]]({url: RecoApiBaseUrl + _0xeccb[10] + RecoApiConfigUrl, dataType: _0xeccb[30], context: this, success: function(_0xe48ex6) {
+                                this[_0xeccb[15]](_0xeccb[31], _0xe48ex6);
+                                this[_0xeccb[15]](_0xeccb[14], _0xe48ex6.Recommendations);
+                                this[_0xeccb[15]](_0xeccb[16], _0xe48ex6.Clusters);
+                                this[_0xeccb[15]](_0xeccb[17], _0xe48ex6.RateChart);
+                                this[_0xeccb[15]](_0xeccb[18], _0xe48ex6.QuoteChart);
+                                console[_0xeccb[9]](_0xeccb[32]);
+                            }});
+                        console[_0xeccb[9]](_0xeccb[34]);
+                    }}});
+            RecoApp[_0xeccb[39]] = Ember[_0xeccb[46]][_0xeccb[19]]({actions: {rate: function(_0xe48ex4) {
+                        var _0xe48ex3 = this[_0xeccb[41]](_0xeccb[40]);
+                        this[_0xeccb[43]](_0xeccb[42], _0xe48ex3, _0xe48ex4);
+                    }}, didInsertElement: function() {
+                    Ember[_0xeccb[44]][_0xeccb[45]](function() {
+                        Holder[_0xeccb[44]]();
+                    });
+                }});
+            Ember.$(document)[_0xeccb[48]](function(_0xe48ex7, _0xe48ex8, _0xe48ex9) {
+                _0xe48ex9[_0xeccb[47]] = {withCredentials: true};
+            });
+        </script>
+
+
+
+
+
+        <div id="ember207" class="ember-view">
+            <div class="container">
+                <!-- Container -->
+                <div class="container">
+                    <script id="metamorph-1-start" type="text/x-placeholder"></script><script id="metamorph-0-start" type="text/x-placeholder"></script>
+
+                    <p><img src="http://chart.googleapis.com/chart?chxl=0:|Action|Adventure|Animation|Children|Comedy|Crime|Documentary|Drama|Fantasy|FilmNoir|Horror|Musical|Mystery|Romance|SciFi|Thriller|War|Western&amp;chxs=0,676767,11.5,1,lt,000000&amp;chxt=x&amp;chs=650x450&amp;cht=r&amp;chco=FF0000,FF9900,3366CC,008000,49188F&amp;chg=5,5,2,2&amp;chls=4|2|2|2|2&amp;chma=|0,5&amp;chtt=Customer Profile&amp;chts=676767,20&amp;chd=t:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0|24,18,4,8,43,12,1,43,9,0,7,5,5,17,13,22,5,1|30,21,5,7,41,12,1,41,8,0,7,3,3,19,16,21,5,5|25,19,4,9,37,13,1,44,8,1,6,5,5,18,14,23,4,2|25,23,11,17,48,9,0,36,14,0,6,8,4,22,13,19,2,0|17,12,3,5,38,12,5,48,5,0,9,3,5,18,10,23,3,0&amp;chdl=You|Segment 383|Segment 36|Segment 109|Segment 427|Segment 439" data-bindattr-1="1" data-ember-action="2" alt="Logo" class="chartPicture"><img src="http://chart.googleapis.com/chart?chxl=0:|Action|Adventure|Animation|Children|Comedy|Crime|Documentary|Drama|Fantasy|FilmNoir|Horror|Musical|Mystery|Romance|SciFi|Thriller|War|Western&amp;chxs=0,676767,11.5,1,lt,000000&amp;chxt=x&amp;chs=650x450&amp;cht=r&amp;chco=FF0000,FF9900,3366CC,008000,49188F&amp;chg=5,5,2,2&amp;chls=4|2|2|2|2&amp;chma=|0,5&amp;chtt=Rating Profile&amp;chts=676767,20&amp;chd=t:0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0|28,28,11,18,30,30,6,30,22,5,23,14,18,28,24,26,16,7|39,40,23,22,39,29,5,37,33,4,15,17,18,37,33,29,36,61|36,35,33,33,34,38,28,38,35,35,32,37,37,34,35,37,40,23|40,46,48,46,49,36,0,53,44,2,17,48,24,52,36,40,10,6|40,40,12,17,47,46,69,53,31,6,35,25,31,50,41,46,20,4&amp;chdl=You|Segment 383|Segment 36|Segment 109|Segment 427|Segment 439" data-bindattr-3="3" data-ember-action="4" alt="Logo" class="chartPicture"></p>
+
+
+                    <div class="row">
+                        <script id="metamorph-22-start" type="text/x-placeholder"></script><script id="metamorph-2-start" type="text/x-placeholder"></script>
+                        <div id="ember272" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-23-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMjE0ODk2NjczOV5BMl5BanBnXkFtZTYwNDQ0NDg4._V1_SX300.jpg" data-bindattr-5="5" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-23-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-24-start" type="text/x-placeholder"></script><script id="metamorph-24-end" type="text/x-placeholder"></script> <script id="metamorph-25-start" type="text/x-placeholder"></script>Pulp Fiction<script id="metamorph-25-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-29-start" type="text/x-placeholder"></script><script id="metamorph-26-start" type="text/x-placeholder"></script> <span class="label label-default">Comedy</span> <script id="metamorph-26-end" type="text/x-placeholder"></script><script id="metamorph-27-start" type="text/x-placeholder"></script> <span class="label label-default">Crime</span> <script id="metamorph-27-end" type="text/x-placeholder"></script><script id="metamorph-28-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-28-end" type="text/x-placeholder"></script><script id="metamorph-29-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="6">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="7">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="8">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="9">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="10">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-2-end" type="text/x-placeholder"></script><script id="metamorph-3-start" type="text/x-placeholder"></script>
+                        <div id="ember284" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-30-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTI5NDIzODMyN15BMl5BanBnXkFtZTYwMDExNDA5._V1_SX300.jpg" data-bindattr-11="11" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-30-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-31-start" type="text/x-placeholder"></script><script id="metamorph-31-end" type="text/x-placeholder"></script> <script id="metamorph-32-start" type="text/x-placeholder"></script>Rushmore<script id="metamorph-32-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-35-start" type="text/x-placeholder"></script><script id="metamorph-33-start" type="text/x-placeholder"></script> <span class="label label-default">Comedy</span> <script id="metamorph-33-end" type="text/x-placeholder"></script><script id="metamorph-34-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-34-end" type="text/x-placeholder"></script><script id="metamorph-35-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="12">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="13">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="14">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="15">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="16">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-3-end" type="text/x-placeholder"></script><script id="metamorph-4-start" type="text/x-placeholder"></script>
+                        <div id="ember293" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-36-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BOTU1MzExMDg3N15BMl5BanBnXkFtZTcwODExNDg3OA@@._V1_SX300.jpg" data-bindattr-17="17" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-36-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-37-start" type="text/x-placeholder"></script><script id="metamorph-37-end" type="text/x-placeholder"></script> <script id="metamorph-38-start" type="text/x-placeholder"></script>American Beauty<script id="metamorph-38-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-40-start" type="text/x-placeholder"></script><script id="metamorph-39-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-39-end" type="text/x-placeholder"></script><script id="metamorph-40-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="18">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="19">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="20">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="21">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="22">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-4-end" type="text/x-placeholder"></script><script id="metamorph-5-start" type="text/x-placeholder"></script>
+                        <div id="ember301" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-41-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTk3ODgyMTgzNF5BMl5BanBnXkFtZTcwODE3MzYwMg@@._V1_SX300.jpg" data-bindattr-23="23" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-41-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-42-start" type="text/x-placeholder"></script><script id="metamorph-42-end" type="text/x-placeholder"></script> <script id="metamorph-43-start" type="text/x-placeholder"></script>Back to the Future Part III<script id="metamorph-43-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-47-start" type="text/x-placeholder"></script><script id="metamorph-44-start" type="text/x-placeholder"></script> <span class="label label-default">Comedy</span> <script id="metamorph-44-end" type="text/x-placeholder"></script><script id="metamorph-45-start" type="text/x-placeholder"></script> <span class="label label-default">Sci-Fi</span> <script id="metamorph-45-end" type="text/x-placeholder"></script><script id="metamorph-46-start" type="text/x-placeholder"></script> <span class="label label-default">Western</span> <script id="metamorph-46-end" type="text/x-placeholder"></script><script id="metamorph-47-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="24">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="25">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="26">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="27">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="28">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-5-end" type="text/x-placeholder"></script><script id="metamorph-6-start" type="text/x-placeholder"></script>
+                        <div id="ember311" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-48-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTk5NjQyMzIwM15BMl5BanBnXkFtZTcwODQyNjYyMQ@@._V1_SX214_.jpg" data-bindattr-29="29" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-48-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-49-start" type="text/x-placeholder"></script><script id="metamorph-49-end" type="text/x-placeholder"></script> <script id="metamorph-50-start" type="text/x-placeholder"></script>Hero (Ying xiong)<script id="metamorph-50-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-54-start" type="text/x-placeholder"></script><script id="metamorph-51-start" type="text/x-placeholder"></script> <span class="label label-default">Action</span> <script id="metamorph-51-end" type="text/x-placeholder"></script><script id="metamorph-52-start" type="text/x-placeholder"></script> <span class="label label-default">Adventure</span> <script id="metamorph-52-end" type="text/x-placeholder"></script><script id="metamorph-53-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-53-end" type="text/x-placeholder"></script><script id="metamorph-54-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="30">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="31">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="32">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="33">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="34">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-6-end" type="text/x-placeholder"></script><script id="metamorph-7-start" type="text/x-placeholder"></script>
+                        <div id="ember321" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-55-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTYzMDM5MjMyN15BMl5BanBnXkFtZTcwNzcyMTEzMQ@@._V1_SY317_CR6,0,214,317_.jpg" data-bindattr-35="35" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-55-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-56-start" type="text/x-placeholder"></script><script id="metamorph-56-end" type="text/x-placeholder"></script> <script id="metamorph-57-start" type="text/x-placeholder"></script>Deer Hunter, The<script id="metamorph-57-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-60-start" type="text/x-placeholder"></script><script id="metamorph-58-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-58-end" type="text/x-placeholder"></script><script id="metamorph-59-start" type="text/x-placeholder"></script> <span class="label label-default">War</span> <script id="metamorph-59-end" type="text/x-placeholder"></script><script id="metamorph-60-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="36">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="37">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="38">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="39">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="40">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-7-end" type="text/x-placeholder"></script><script id="metamorph-8-start" type="text/x-placeholder"></script>
+                        <div id="ember330" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-61-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BOTI2ODA3MTc4MF5BMl5BanBnXkFtZTYwMzUwMjU5._V1_SX300.jpg" data-bindattr-41="41" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-61-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-62-start" type="text/x-placeholder"></script><script id="metamorph-62-end" type="text/x-placeholder"></script> <script id="metamorph-63-start" type="text/x-placeholder"></script>Pi<script id="metamorph-63-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-66-start" type="text/x-placeholder"></script><script id="metamorph-64-start" type="text/x-placeholder"></script> <span class="label label-default">Sci-Fi</span> <script id="metamorph-64-end" type="text/x-placeholder"></script><script id="metamorph-65-start" type="text/x-placeholder"></script> <span class="label label-default">Thriller</span> <script id="metamorph-65-end" type="text/x-placeholder"></script><script id="metamorph-66-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="42">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="43">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="44">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="45">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="46">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-8-end" type="text/x-placeholder"></script><script id="metamorph-9-start" type="text/x-placeholder"></script>
+                        <div id="ember339" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-67-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SY317_CR0,0,214,317_.jpg" data-bindattr-47="47" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-67-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-68-start" type="text/x-placeholder"></script><script id="metamorph-68-end" type="text/x-placeholder"></script> <script id="metamorph-69-start" type="text/x-placeholder"></script>Incredibles, The<script id="metamorph-69-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-75-start" type="text/x-placeholder"></script><script id="metamorph-70-start" type="text/x-placeholder"></script> <span class="label label-default">Action</span> <script id="metamorph-70-end" type="text/x-placeholder"></script><script id="metamorph-71-start" type="text/x-placeholder"></script> <span class="label label-default">Adventure</span> <script id="metamorph-71-end" type="text/x-placeholder"></script><script id="metamorph-72-start" type="text/x-placeholder"></script> <span class="label label-default">Animation</span> <script id="metamorph-72-end" type="text/x-placeholder"></script><script id="metamorph-73-start" type="text/x-placeholder"></script> <span class="label label-default">Children</span> <script id="metamorph-73-end" type="text/x-placeholder"></script><script id="metamorph-74-start" type="text/x-placeholder"></script> <span class="label label-default">Comedy</span> <script id="metamorph-74-end" type="text/x-placeholder"></script><script id="metamorph-75-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="48">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="49">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="50">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="51">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="52">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-9-end" type="text/x-placeholder"></script><script id="metamorph-10-start" type="text/x-placeholder"></script>
+                        <div id="ember351" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-76-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BNTEyMjAwMDU1OV5BMl5BanBnXkFtZTcwNDQyNTkxMw@@._V1_SY317_CR1,0,214,317_.jpg" data-bindattr-53="53" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-76-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-77-start" type="text/x-placeholder"></script><script id="metamorph-77-end" type="text/x-placeholder"></script> <script id="metamorph-78-start" type="text/x-placeholder"></script>Lord of the Rings: The Fellowship of the Ring, The<script id="metamorph-78-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-82-start" type="text/x-placeholder"></script><script id="metamorph-79-start" type="text/x-placeholder"></script> <span class="label label-default">Action</span> <script id="metamorph-79-end" type="text/x-placeholder"></script><script id="metamorph-80-start" type="text/x-placeholder"></script> <span class="label label-default">Adventure</span> <script id="metamorph-80-end" type="text/x-placeholder"></script><script id="metamorph-81-start" type="text/x-placeholder"></script> <span class="label label-default">Fantasy</span> <script id="metamorph-81-end" type="text/x-placeholder"></script><script id="metamorph-82-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="54">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="55">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="56">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="57">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="58">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-10-end" type="text/x-placeholder"></script><script id="metamorph-11-start" type="text/x-placeholder"></script>
+                        <div id="ember361" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-83-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTk4OTQ0MzkzMF5BMl5BanBnXkFtZTYwNjY2ODg5._V1_SX214_.jpg" data-bindattr-59="59" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-83-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-84-start" type="text/x-placeholder"></script><script id="metamorph-84-end" type="text/x-placeholder"></script> <script id="metamorph-85-start" type="text/x-placeholder"></script>Omen, The<script id="metamorph-85-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-88-start" type="text/x-placeholder"></script><script id="metamorph-86-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-86-end" type="text/x-placeholder"></script><script id="metamorph-87-start" type="text/x-placeholder"></script> <span class="label label-default">Horror</span> <script id="metamorph-87-end" type="text/x-placeholder"></script><script id="metamorph-88-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="60">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="61">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="62">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="63">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="64">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-11-end" type="text/x-placeholder"></script><script id="metamorph-12-start" type="text/x-placeholder"></script>
+                        <div id="ember370" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-89-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMjA0NjE3NDA2NF5BMl5BanBnXkFtZTcwMzgzNDUyMQ@@._V1_SY317_CR6,0,214,317_.jpg" data-bindattr-65="65" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-89-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-90-start" type="text/x-placeholder"></script><script id="metamorph-90-end" type="text/x-placeholder"></script> <script id="metamorph-91-start" type="text/x-placeholder"></script>Monty Python's And Now for Something Completely Different<script id="metamorph-91-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-93-start" type="text/x-placeholder"></script><script id="metamorph-92-start" type="text/x-placeholder"></script> <span class="label label-default">Comedy</span> <script id="metamorph-92-end" type="text/x-placeholder"></script><script id="metamorph-93-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="66">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="67">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="68">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="69">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="70">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-12-end" type="text/x-placeholder"></script><script id="metamorph-13-start" type="text/x-placeholder"></script>
+                        <div id="ember378" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-94-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMjU3MTQ4OTA0MV5BMl5BanBnXkFtZTYwNjAyMDg4._V1_SX300.jpg" data-bindattr-71="71" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-94-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-95-start" type="text/x-placeholder"></script><script id="metamorph-95-end" type="text/x-placeholder"></script> <script id="metamorph-96-start" type="text/x-placeholder"></script>Goodfellas<script id="metamorph-96-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-99-start" type="text/x-placeholder"></script><script id="metamorph-97-start" type="text/x-placeholder"></script> <span class="label label-default">Crime</span> <script id="metamorph-97-end" type="text/x-placeholder"></script><script id="metamorph-98-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-98-end" type="text/x-placeholder"></script><script id="metamorph-99-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="72">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="73">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="74">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="75">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="76">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-13-end" type="text/x-placeholder"></script><script id="metamorph-14-start" type="text/x-placeholder"></script>
+                        <div id="ember387" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-100-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMzkwODM1OTY1Nl5BMl5BanBnXkFtZTcwOTcxMDQ1NA@@._V1_SX300.jpg" data-bindattr-77="77" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-100-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-101-start" type="text/x-placeholder"></script><script id="metamorph-101-end" type="text/x-placeholder"></script> <script id="metamorph-102-start" type="text/x-placeholder"></script>Much Ado About Nothing<script id="metamorph-102-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-105-start" type="text/x-placeholder"></script><script id="metamorph-103-start" type="text/x-placeholder"></script> <span class="label label-default">Comedy</span> <script id="metamorph-103-end" type="text/x-placeholder"></script><script id="metamorph-104-start" type="text/x-placeholder"></script> <span class="label label-default">Romance</span> <script id="metamorph-104-end" type="text/x-placeholder"></script><script id="metamorph-105-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="78">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="79">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="80">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="81">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="82">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-14-end" type="text/x-placeholder"></script><script id="metamorph-15-start" type="text/x-placeholder"></script>
+                        <div id="ember396" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-106-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMzI1MjI5MDQyOV5BMl5BanBnXkFtZTcwNzE4Mjg3NA@@._V1_SX214_.jpg" data-bindattr-83="83" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-106-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-107-start" type="text/x-placeholder"></script><script id="metamorph-107-end" type="text/x-placeholder"></script> <script id="metamorph-108-start" type="text/x-placeholder"></script>Usual Suspects, The<script id="metamorph-108-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-112-start" type="text/x-placeholder"></script><script id="metamorph-109-start" type="text/x-placeholder"></script> <span class="label label-default">Crime</span> <script id="metamorph-109-end" type="text/x-placeholder"></script><script id="metamorph-110-start" type="text/x-placeholder"></script> <span class="label label-default">Mystery</span> <script id="metamorph-110-end" type="text/x-placeholder"></script><script id="metamorph-111-start" type="text/x-placeholder"></script> <span class="label label-default">Thriller</span> <script id="metamorph-111-end" type="text/x-placeholder"></script><script id="metamorph-112-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="84">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="85">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="86">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="87">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="88">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-15-end" type="text/x-placeholder"></script><script id="metamorph-16-start" type="text/x-placeholder"></script>
+                        <div id="ember406" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-113-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTkxMzIzOTY1NF5BMl5BanBnXkFtZTcwMjU2NjY0MQ@@._V1_SY317_CR3,0,214,317_.jpg" data-bindattr-89="89" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-113-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-114-start" type="text/x-placeholder"></script><script id="metamorph-114-end" type="text/x-placeholder"></script> <script id="metamorph-115-start" type="text/x-placeholder"></script>Glory<script id="metamorph-115-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-119-start" type="text/x-placeholder"></script><script id="metamorph-116-start" type="text/x-placeholder"></script> <span class="label label-default">Action</span> <script id="metamorph-116-end" type="text/x-placeholder"></script><script id="metamorph-117-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-117-end" type="text/x-placeholder"></script><script id="metamorph-118-start" type="text/x-placeholder"></script> <span class="label label-default">War</span> <script id="metamorph-118-end" type="text/x-placeholder"></script><script id="metamorph-119-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="90">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="91">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="92">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="93">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="94">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-16-end" type="text/x-placeholder"></script><script id="metamorph-17-start" type="text/x-placeholder"></script>
+                        <div id="ember416" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-120-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMjA4MzI1NDY2Nl5BMl5BanBnXkFtZTcwMTcyODc5Mw@@._V1_SX300.jpg" data-bindattr-95="95" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-120-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-121-start" type="text/x-placeholder"></script><script id="metamorph-121-end" type="text/x-placeholder"></script> <script id="metamorph-122-start" type="text/x-placeholder"></script>To Kill a Mockingbird<script id="metamorph-122-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-124-start" type="text/x-placeholder"></script><script id="metamorph-123-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-123-end" type="text/x-placeholder"></script><script id="metamorph-124-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="96">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="97">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="98">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="99">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="100">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-17-end" type="text/x-placeholder"></script><script id="metamorph-18-start" type="text/x-placeholder"></script>
+                        <div id="ember424" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-125-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTk5NzE0MDQyNl5BMl5BanBnXkFtZTcwNzk4Mjk3OA@@._V1_SY317_CR2,0,214,317_.jpg" data-bindattr-101="101" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-125-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-126-start" type="text/x-placeholder"></script><script id="metamorph-126-end" type="text/x-placeholder"></script> <script id="metamorph-127-start" type="text/x-placeholder"></script>Snatch<script id="metamorph-127-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-132-start" type="text/x-placeholder"></script><script id="metamorph-128-start" type="text/x-placeholder"></script> <span class="label label-default">Action</span> <script id="metamorph-128-end" type="text/x-placeholder"></script><script id="metamorph-129-start" type="text/x-placeholder"></script> <span class="label label-default">Comedy</span> <script id="metamorph-129-end" type="text/x-placeholder"></script><script id="metamorph-130-start" type="text/x-placeholder"></script> <span class="label label-default">Crime</span> <script id="metamorph-130-end" type="text/x-placeholder"></script><script id="metamorph-131-start" type="text/x-placeholder"></script> <span class="label label-default">Thriller</span> <script id="metamorph-131-end" type="text/x-placeholder"></script><script id="metamorph-132-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="102">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="103">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="104">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="105">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="106">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-18-end" type="text/x-placeholder"></script><script id="metamorph-19-start" type="text/x-placeholder"></script>
+                        <div id="ember435" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-133-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTI4NjgwMDMyMl5BMl5BanBnXkFtZTcwNTM4MDMzMQ@@._V1_SX300.jpg" data-bindattr-107="107" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-133-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-134-start" type="text/x-placeholder"></script><script id="metamorph-134-end" type="text/x-placeholder"></script> <script id="metamorph-135-start" type="text/x-placeholder"></script>Shadowlands<script id="metamorph-135-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-138-start" type="text/x-placeholder"></script><script id="metamorph-136-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-136-end" type="text/x-placeholder"></script><script id="metamorph-137-start" type="text/x-placeholder"></script> <span class="label label-default">Romance</span> <script id="metamorph-137-end" type="text/x-placeholder"></script><script id="metamorph-138-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="108">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="109">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="110">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="111">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="112">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-19-end" type="text/x-placeholder"></script><script id="metamorph-20-start" type="text/x-placeholder"></script>
+                        <div id="ember444" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-139-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTM2ODk5NDU2M15BMl5BanBnXkFtZTcwMDQ0MTMyNA@@._V1_SX214_.jpg" data-bindattr-113="113" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-139-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-140-start" type="text/x-placeholder"></script><script id="metamorph-140-end" type="text/x-placeholder"></script> <script id="metamorph-141-start" type="text/x-placeholder"></script>Return of the Pink Panther, The<script id="metamorph-141-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-144-start" type="text/x-placeholder"></script><script id="metamorph-142-start" type="text/x-placeholder"></script> <span class="label label-default">Comedy</span> <script id="metamorph-142-end" type="text/x-placeholder"></script><script id="metamorph-143-start" type="text/x-placeholder"></script> <span class="label label-default">Crime</span> <script id="metamorph-143-end" type="text/x-placeholder"></script><script id="metamorph-144-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="114">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="115">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="116">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="117">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="118">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-20-end" type="text/x-placeholder"></script><script id="metamorph-21-start" type="text/x-placeholder"></script>
+                        <div id="ember453" class="ember-view">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="shadowBox">
+
+                                    <script id="metamorph-145-start" type="text/x-placeholder"></script>
+                                    <img src="http://ia.media-imdb.com/images/M/MV5BMTczMzE4Nzk3N15BMl5BanBnXkFtZTcwNDg5Mjc4NA@@._V1_SX300.jpg" data-bindattr-119="119" alt="Movie Poster" class="img-rounded movieTitlePic">
+                                    <script id="metamorph-145-end" type="text/x-placeholder"></script>
+                                    <h4><script id="metamorph-146-start" type="text/x-placeholder"></script><script id="metamorph-146-end" type="text/x-placeholder"></script> <script id="metamorph-147-start" type="text/x-placeholder"></script>Donnie Darko<script id="metamorph-147-end" type="text/x-placeholder"></script></h4>
+                                    <p><script id="metamorph-152-start" type="text/x-placeholder"></script><script id="metamorph-148-start" type="text/x-placeholder"></script> <span class="label label-default">Drama</span> <script id="metamorph-148-end" type="text/x-placeholder"></script><script id="metamorph-149-start" type="text/x-placeholder"></script> <span class="label label-default">Mystery</span> <script id="metamorph-149-end" type="text/x-placeholder"></script><script id="metamorph-150-start" type="text/x-placeholder"></script> <span class="label label-default">Sci-Fi</span> <script id="metamorph-150-end" type="text/x-placeholder"></script><script id="metamorph-151-start" type="text/x-placeholder"></script> <span class="label label-default">Thriller</span> <script id="metamorph-151-end" type="text/x-placeholder"></script><script id="metamorph-152-end" type="text/x-placeholder"></script></p>
+                                    <form>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-ember-action="120">1</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="121">2</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="122">3</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="123">4</button> 
+                                            <button type="button" class="btn btn-default" data-ember-action="124">5</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <script id="metamorph-21-end" type="text/x-placeholder"></script><script id="metamorph-22-end" type="text/x-placeholder"></script>
+                    </div>
+                    <!-- Row -->
+                    <script id="metamorph-0-end" type="text/x-placeholder"></script><script id="metamorph-1-end" type="text/x-placeholder"></script>
+                </div>
+                <!-- Footer -->
+                <footer>
+                    <div class="footer">
+                        <p>© Khaled Nabli</p>
+                    </div>
+                </footer>
+                <!-- End container	-->
+            </div>
+        </div></body></html>
